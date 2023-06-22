@@ -25,7 +25,8 @@ div.container{
     grid-template-rows: repeat(3, 100px);
     gap: 10px;
 }
-div.item{
+div.item,
+div.x{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,14 +37,45 @@ div.item{
 }
 div.item:hover,
 div.item:active{
-    background-color: #555;
+    background-color: #fff;
     cursor: pointer;
 }
 div.circle{
     border-radius: 50%;
-    border: 3px solid #f00;
-    height: 80%;
-    width: 80%;
+    border: 5px solid #f00;
+    height: 70%;
+    width: 70%;
 }
+div.stick1,
+div.stick2{
+    width: 75px;
+    height: 5px;
+    background-color: #00f;
+    position:fixed;
+}
+div.stick1{
+    transform: rotate(45deg);
+}
+div.stick2{
+    transform: rotate(-45deg);
+}
+div.actions{
+    margin-top: 20px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 7px;
+    border: none;
+    margin: 0px 5px;
+    transition: all ease 0.3s;
+}
+button:hover,
+button:active{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
 
 
