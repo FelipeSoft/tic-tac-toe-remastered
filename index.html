@@ -7,24 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <div class="score">
+        <div class="score-item">
+            <h2>x</h2>
+            <p class="points-x">0</p>
+        </div>
+        <div class="score-item">
+            <h2>o</h2>
+            <p class="points-o">0</p>
+        </div>
+    </div>
+    <div class="warning">Começar o jogo ou selecionar jogador</div>
     <div class="container">
-        <div class="item item-1">
+        <div class="item a1" position="a1">
         </div>
-        <div class="item item-2">
-
+        <div class="item a2" position="a2">
+            
         </div>
-        <div class="item item-3"></div>
-        <div class="item item-4"></div>
-        <div class="item item-5"></div>
-        <div class="item item-6"></div>
-        <div class="item item-7"></div>
-        <div class="item item-8"></div>
-        <div class="item item-9"></div>
+        <div class="item a3" position="a3"></div>
+        <div class="item b1" position="b1"></div>
+        <div class="item b2" position="b2"></div>
+        <div class="item b3" position="b3"></div>
+        <div class="item c1" position="c1"></div>
+        <div class="item c2" position="c2"></div>
+        <div class="item c3" position="c3"></div>
     </div>
     <div class="actions">
-        <button id="play">Jogar</button>
-        <button id="restart">Reiniciar</button>
+
     </div>
     <script src="script.js"></script>
 </body>
