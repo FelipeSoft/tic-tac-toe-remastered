@@ -23,6 +23,11 @@ p{
     color: #fff;
 }
 div.container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+div.board{
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -35,8 +40,21 @@ div.x{
     transition: all ease 0.3s;
     opacity: 0;
 }
-div.item{
+div.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+div.item,
+div.switched{
     border: 1px solid #fff;
+}
+div.switched{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px 100px 0px;
 }
 div.item,
 div.x{
@@ -124,6 +142,12 @@ div.score-item:nth-child(2):hover,
 div.score-item:nth-child(2):active{
     border: 1px solid #f00;
     cursor: pointer;
+}
+div.difficult{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 

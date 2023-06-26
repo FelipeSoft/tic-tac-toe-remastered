@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="difficult">
+        <button id="normal">Normal</button>
+        <button id="impossible">Impossible</button>
+        <button id="with-a-friend">With a Friend</button>
+    </div>
     <div class="score">
         <div class="score-item">
             <h2>x</h2>
@@ -17,20 +22,30 @@
             <p class="points-o">0</p>
         </div>
     </div>
-    <div class="warning">Começar o jogo ou selecionar jogador.</div>
+    <div class="warning">Start the game or choose a player.</div>
     <div class="container">
-        <div class="item a1" position="a1">
+        <div class="player">
+            Jogador 1
+            <div class="switched"></div>
         </div>
-        <div class="item a2" position="a2">
-            
+        <div class="board">
+            <div class="item a1" position="a1">
+            </div>
+            <div class="item a2" position="a2">
+                
+            </div>
+            <div class="item a3" position="a3"></div>
+            <div class="item b1" position="b1"></div>
+            <div class="item b2" position="b2"></div>
+            <div class="item b3" position="b3"></div>
+            <div class="item c1" position="c1"></div>
+            <div class="item c2" position="c2"></div>
+            <div class="item c3" position="c3"></div>
         </div>
-        <div class="item a3" position="a3"></div>
-        <div class="item b1" position="b1"></div>
-        <div class="item b2" position="b2"></div>
-        <div class="item b3" position="b3"></div>
-        <div class="item c1" position="c1"></div>
-        <div class="item c2" position="c2"></div>
-        <div class="item c3" position="c3"></div>
+        <div class="player">
+            Jogador 2
+            <div class="switched"></div>
+        </div>
     </div>
     <div class="actions">
         <button id="play-again">Play again</button>
